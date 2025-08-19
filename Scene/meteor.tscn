@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh5gjwtayjiwl"]
+
+[ext_resource type="Texture2D" uid="uid://db1b850ktxtao" path="res://Scene/sprockk.png" id="1_ciwrr"]
+
+[node name="Meteor" type="Node2D"]
+
+[node name="Sprockk" type="Sprite2D" parent="."]
+position = Vector2(408, 139)
+scale = Vector2(0.349, 0.4)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk2" type="Sprite2D" parent="."]
+position = Vector2(808, 210)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk3" type="Sprite2D" parent="."]
+position = Vector2(798, 382)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk4" type="Sprite2D" parent="."]
+position = Vector2(293, 398)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk5" type="Sprite2D" parent="."]
+position = Vector2(1086, 353)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk6" type="Sprite2D" parent="."]
+position = Vector2(1171, 90)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk7" type="Sprite2D" parent="."]
+position = Vector2(626, 617)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk8" type="Sprite2D" parent="."]
+position = Vector2(151, 142)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk9" type="Sprite2D" parent="."]
+position = Vector2(524, 368)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")
+
+[node name="Sprockk10" type="Sprite2D" parent="."]
+position = Vector2(126, 589)
+scale = Vector2(0.4, 0.458)
+texture = ExtResource("1_ciwrr")

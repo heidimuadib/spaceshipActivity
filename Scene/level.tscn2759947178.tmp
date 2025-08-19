@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://cx66ju3lotxnq"]
+
+[ext_resource type="Texture2D" uid="uid://b0tijv3yltd4d" path="res://backgrounds/stars.png" id="1_jnrmd"]
+[ext_resource type="PackedScene" uid="uid://bh5gjwtayjiwl" path="res://Scene/meteor.tscn" id="2_3bu56"]
+[ext_resource type="PackedScene" uid="uid://41nnx283d0mt" path="res://Scene/player.tscn" id="2_or6n4"]
+[ext_resource type="Script" uid="uid://d0caeiq54d07q" path="res://Scene/meteor.gd" id="3_tut6d"]
+[ext_resource type="Script" uid="uid://bqgl3clpqxoo5" path="res://Scene/player.gd" id="4_or6n4"]
+
+[node name="level" type="Node2D"]
+
+[node name="Stars" type="Sprite2D" parent="."]
+position = Vector2(1025.25, 492.25)
+scale = Vector2(0.99292, 0.481201)
+texture = ExtResource("1_jnrmd")
+
+[node name="Meteor" parent="." instance=ExtResource("2_3bu56")]
+position = Vector2(918, 83)
+scale = Vector2(0.6, 0.6)
+script = ExtResource("3_tut6d")
+
+[node name="Player" parent="." instance=ExtResource("2_or6n4")]
+position = Vector2(824, 748)
+scale = Vector2(0.3, 0.3)
+script = ExtResource("4_or6n4")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://41nnx283d0mt"]
+
+[ext_resource type="Texture2D" uid="uid://564i25l7yk3u" path="res://ships/Faction7-Spaceships-by-MillionthVector/blue1.png" id="1_kelma"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(574, 446)
+texture = ExtResource("1_kelma")
+
+[node name="player2" type="Sprite2D" parent="."]
+position = Vector2(897, 562)
+texture = ExtResource("1_kelma")
+
+[node name="player3" type="Sprite2D" parent="."]
+position = Vector2(260, 562)
+texture = ExtResource("1_kelma")
