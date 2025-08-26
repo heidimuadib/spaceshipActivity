@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://xm7bmarbve4j"]
+
+[ext_resource type="Texture2D" uid="uid://c0bc7g2x1i50d" path="res://ships/Faction5-Spaceships-by-MillionthVector/F5S1.png" id="1_m1gme"]
+
+[node name="Player2" type="Node2D"]
+
+[node name="player2" type="Sprite2D" parent="."]
+position = Vector2(604, 318)
+texture = ExtResource("1_m1gme")

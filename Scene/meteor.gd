@@ -15,6 +15,7 @@ func _process(delta):
 	var screen_size = get_viewport_rect().size
 	
 	for child in get_children():
+		
 		if str(child.name).begins_with("Sprockk"):
 			
 			child.position.y += fall_speed * delta
