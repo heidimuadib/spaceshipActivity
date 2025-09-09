@@ -28,3 +28,7 @@ func _process(delta):
 			
 			if child.position.y > screen_size.y:
 				child.position = Vector2(randi_range(0, screen_size.x), 0)
+
+
+func _on_body_entered(body: Node2D) -> void:
+	print("body entered")

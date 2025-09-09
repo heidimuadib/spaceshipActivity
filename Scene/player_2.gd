@@ -1,4 +1,4 @@
-extends Node2D
+extends CharacterBody2D
 
 @export var speed = 500
 var screen_size: Vector2
@@ -11,13 +11,9 @@ var screen_size: Vector2
 func _ready() -> void:
 	
 	position=Vector2(100, 500)
-	screen_size = get_viewport_rect().size
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 
 	var direction = Input.get_vector(a, d, w, s)
-	
-	position += direction * speed * delta
-	
-	position.x = clamp(position.x, 0, screen_size.x)
-	position.y = clamp(position.y, 0, screen_size.y)
+	velocity = direction * speed
+	move_and_slide()

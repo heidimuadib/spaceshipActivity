@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cerdj28ox7pq2"]
+
+[ext_resource type="Texture2D" uid="uid://bhrr5naa2lryk" path="res://Scene/lase.png" id="1_2mc1n"]
+
+[node name="Laser" type="Area2D"]
+position = Vector2(2745, 562)
+rotation = -0.00733478
+scale = Vector2(-1.87849, -2.25032)
+metadata/_edit_group_ = true
+
+[node name="Lase" type="Sprite2D" parent="."]
+position = Vector2(518, 172)
+rotation = -1.54173
+texture = ExtResource("1_2mc1n")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(544.007, -295.746, 538.754, -303.777, 529.199, -306.946, 518.972, -294.121, 516.593, -265.695, 518.425, -231.91, 513.957, -147.502, 501.145, 523.008, 489.553, 630.481, 500.537, 652.767, 506.909, 654.584, 515.477, 648.859, 516.679, 633.313, 524.928, 360.951, 530.329, 170.339)
