@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://cx66ju3lotxnq"]
+[gd_scene load_steps=11 format=3 uid="uid://cx66ju3lotxnq"]
 
+[ext_resource type="Script" uid="uid://ckmdj1banq1ew" path="res://Scene/level.gd" id="1_hdt71"]
 [ext_resource type="Texture2D" uid="uid://b0tijv3yltd4d" path="res://backgrounds/stars.png" id="1_jnrmd"]
 [ext_resource type="PackedScene" uid="uid://bh5gjwtayjiwl" path="res://Scene/meteor.tscn" id="2_3bu56"]
 [ext_resource type="PackedScene" uid="uid://41nnx283d0mt" path="res://Scene/player.tscn" id="2_or6n4"]
@@ -15,6 +16,7 @@ size = Vector2(2180, 20)
 size = Vector2(29, 991.5)
 
 [node name="level" type="Node2D"]
+script = ExtResource("1_hdt71")
 
 [node name="BG" type="Sprite2D" parent="."]
 position = Vector2(965.063, 485.562)
@@ -61,5 +63,12 @@ position = Vector2(19.5, 487.25)
 shape = SubResource("RectangleShape2D_hdt71")
 
 [node name="Laser" parent="." instance=ExtResource("7_iysjp")]
-position = Vector2(525, 220)
+position = Vector2(-173, 560)
 scale = Vector2(0.474408, 0.238775)
+
+[node name="MeteorTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="Meteors" type="Node2D" parent="."]
+
+[connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]

@@ -1,34 +1,20 @@
 extends Node2D
 
-var fall_speed = 30
+var velocity: Vector2 = Vector2.ZERO
+var rng := RandomNumberGenerator.new()
 
 func _ready():
-	var screen_size = get_viewport_rect().size
-	randomize()
-	
-
-	for child in get_children():
-		if str(child.name).begins_with("Sprockk"):
-			child.position = Vector2(randi_range(0, screen_size.x), randf_range(-screen_size.y, 0))
+	rng.randomize()
+	var direction = Vector2(rng.randf_range(-0.5, 0.5), 1).normalized()
+	var speed = rng.randf_range(150, 600)
+	velocity = direction * speed
 
 func _process(delta):
-	var screen_size = get_viewport_rect().size
-	
-	for child in get_children():
-		
-		if str(child.name).begins_with("Sprockk"):
-			
-			child.position.y += fall_speed * delta
-			
-			
-			var num_str = str(child.name).lstrip("Sprockk") 
-			var idx = int(num_str) if num_str.is_valid_int() else 1
-			child.rotation += (0.1 + idx * 0.02) * delta
-			
-			
-			if child.position.y > screen_size.y:
-				child.position = Vector2(randi_range(0, screen_size.x), 0)
+	position += velocity * delta
 
+	var height = get_viewport().get_visible_rect().size.y
+	if position.y > height + 50:
+		queue_free()
 
 func _on_body_entered(body: Node2D) -> void:
-	print("body entered")
+	queue_free()
