@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://db1b850ktxtao"
-path="res://.godot/imported/sprockk.png-7c4c6b1632c24b8f7e66214492ad618f.ctex"
+uid="uid://bw5ehk8gcvrlm"
+path="res://.godot/imported/4.png-f39d730a127600bb39f6b9dc2aef2dbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scene/sprockk.png"
-dest_files=["res://.godot/imported/sprockk.png-7c4c6b1632c24b8f7e66214492ad618f.ctex"]
+source_file="res://Scene/meteor/textures/4.png"
+dest_files=["res://.godot/imported/4.png-f39d730a127600bb39f6b9dc2aef2dbc.ctex"]
 
 [params]
 
