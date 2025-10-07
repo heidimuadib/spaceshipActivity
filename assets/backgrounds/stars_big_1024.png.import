@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wual0a63vjao"
-path="res://.godot/imported/3.png-b4e30c7ec3189a2ac920f12f9dcc0e8d.ctex"
+uid="uid://c73eqv7sfbxvo"
+path="res://.godot/imported/stars_big_1024.png-afcac4cf67e3c50ac0ec00567169960b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scene/meteor/textures/3.png"
-dest_files=["res://.godot/imported/3.png-b4e30c7ec3189a2ac920f12f9dcc0e8d.ctex"]
+source_file="res://assets/backgrounds/stars_big_1024.png"
+dest_files=["res://.godot/imported/stars_big_1024.png-afcac4cf67e3c50ac0ec00567169960b.ctex"]
 
 [params]
 

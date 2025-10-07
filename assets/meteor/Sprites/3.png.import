@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhrr5naa2lryk"
-path="res://.godot/imported/lase.png-1ac3d5c8cf4f23fa7da8024e7e1f06e2.ctex"
+uid="uid://wual0a63vjao"
+path="res://.godot/imported/3.png-3ec9ba300f976dcdb6352538a9ecb0b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scene/lase.png"
-dest_files=["res://.godot/imported/lase.png-1ac3d5c8cf4f23fa7da8024e7e1f06e2.ctex"]
+source_file="res://assets/meteor/Sprites/3.png"
+dest_files=["res://.godot/imported/3.png-3ec9ba300f976dcdb6352538a9ecb0b8.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://buep5fj3acwi6"]
 
-[ext_resource type="Texture2D" uid="uid://wual0a63vjao" path="res://Scene/meteor/textures/3.png" id="1_6jrqi"]
-[ext_resource type="Script" uid="uid://d0caeiq54d07q" path="res://Scene/meteor/Scripts/meteor.gd" id="1_xyabc"]
+[ext_resource type="Texture2D" uid="uid://wual0a63vjao" path="res://assets/meteor/Sprites/3.png" id="1_6jrqi"]
+[ext_resource type="Script" uid="uid://d0caeiq54d07q" path="res://assets/meteor/Scripts/meteor.gd" id="1_xyabc"]
 
 [node name="Meteor3" type="Area2D"]
 script = ExtResource("1_xyabc")

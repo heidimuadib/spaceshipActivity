@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cerdj28ox7pq2"]
 
-[ext_resource type="Texture2D" uid="uid://bhrr5naa2lryk" path="res://Scene/lase.png" id="1_2mc1n"]
+[ext_resource type="Texture2D" uid="uid://bhrr5naa2lryk" path="res://assets/Laser/Sprites/lase.png" id="1_2mc1n"]
 
 [node name="Laser" type="Area2D"]
 position = Vector2(18.0002, 586)
