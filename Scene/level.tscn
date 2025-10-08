@@ -1,12 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://cx66ju3lotxnq"]
+[gd_scene load_steps=12 format=3 uid="uid://cx66ju3lotxnq"]
 
 [ext_resource type="Script" uid="uid://ckmdj1banq1ew" path="res://Scene/level.gd" id="1_hdt71"]
 [ext_resource type="Texture2D" uid="uid://b0tijv3yltd4d" path="res://assets/backgrounds/stars.png" id="1_jnrmd"]
 [ext_resource type="PackedScene" uid="uid://41nnx283d0mt" path="res://assets/Player/Scenes/player.tscn" id="2_or6n4"]
 [ext_resource type="Script" uid="uid://bqgl3clpqxoo5" path="res://assets/Player/Scripts/player.gd" id="4_or6n4"]
+[ext_resource type="AudioStream" uid="uid://df6cnfboi4rah" path="res://assets/Laser/Sounds/laser_shoot.wav" id="5_iysjp"]
 [ext_resource type="PackedScene" uid="uid://xm7bmarbve4j" path="res://assets/Player/Scenes/Player2.tscn" id="6_iysjp"]
 [ext_resource type="Script" uid="uid://c7ssn52y4ee5v" path="res://assets/Player/Scripts/player_2.gd" id="7_hdt71"]
 [ext_resource type="PackedScene" uid="uid://cerdj28ox7pq2" path="res://assets/Laser/Scenes/laser.tscn" id="7_iysjp"]
+[ext_resource type="AudioStream" uid="uid://d2dhfvw6o4es8" path="res://assets/Laser/Sounds/laser_shoot2.wav" id="8_hdt71"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iysjp"]
 size = Vector2(2180, 20)
@@ -16,10 +18,6 @@ size = Vector2(29, 991.5)
 
 [node name="level" type="Node2D"]
 script = ExtResource("1_hdt71")
-
-[node name="Laser" parent="." instance=ExtResource("7_iysjp")]
-position = Vector2(-173, 560)
-scale = Vector2(0.474408, 0.238775)
 
 [node name="MeteorTimer" type="Timer" parent="."]
 autostart = true
@@ -60,16 +58,24 @@ shape = SubResource("RectangleShape2D_hdt71")
 [node name="PlayersGroup" type="Node2D" parent="."]
 
 [node name="Player" parent="PlayersGroup" instance=ExtResource("2_or6n4")]
-position = Vector2(415, 314)
+position = Vector2(347, 314)
 scale = Vector2(0.3, 0.3)
 script = ExtResource("4_or6n4")
+laser_scene = ExtResource("7_iysjp")
+laser_sound = ExtResource("5_iysjp")
 
 [node name="Player2" parent="PlayersGroup" instance=ExtResource("6_iysjp")]
-position = Vector2(143, 164)
+position = Vector2(150, 157)
 script = ExtResource("7_hdt71")
+laser_scene = ExtResource("7_iysjp")
+laser_sound = ExtResource("8_hdt71")
 
 [node name="MeteorSpawner" type="Node2D" parent="."]
 
 [node name="Meteors" type="Node2D" parent="MeteorSpawner"]
+
+[node name="LaserSpawner" type="Node2D" parent="."]
+
+[node name="laser" type="Node2D" parent="LaserSpawner"]
 
 [connection signal="timeout" from="MeteorTimer" to="." method="_on_meteor_timer_timeout"]
